@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - net_chat</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/style.css">
+	<link rel="stylesheet" href="~/css/comment_style.css">
+
+</head>
+<body>
+
+@* <div class="topbar"> *@
+@* <button id="menu-toggle">☰</button> *@
+@* </div> *@
+
+<!-- Sidebar -->
+<div id="sidebar" class="sidebar">
+	<button id="menu-close" class="close-btn">✕</button>
+	<div class="user-info">
+		@if (User.Identity?.IsAuthenticated == true)
+		{
+			<img src="@(User.FindFirst("AvatarUrl")?.Value ?? "image/user.png")" class="avatar-img" alt="Avatar">
+			<span class="username">@User.Identity.Name</span>
+		}
+		else
+		{
+			<img src="image/user.png" class="avatar-img" alt="Avatar">
+			<span class="username">Guest</span>
+		}
+	</div>
+	<ul>
+		<li><a href="/Home" class="menu-link">Home</a></li>
+		<li><a href="/Post" class="menu-link">Post</a></li>
+		<li><a href="/Color" class="menu-link">Color</a></li>
+		<li><a href="/Typography" class="menu-link">Typography</a></li>
+		<li><a href="/Icons" class="menu-link">Icons</a></li>
+		<li><a href="/Index" class="menu-link">Login</a></li>
+		<li><a href="/Register" class="menu-link">Register</a></li>
+	</ul>
+</div>
+
+<!-- Overlay khi sidebar mở ở mobile -->
+<div id="overlay" class="overlay"></div>
+
+<!-- Nội dung chính -->
+<div class="content">
+	@RenderBody()
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+<script src="~/js/script.js" asp-append-version="true"></script>
+<script src="~/js/common.js" asp-append-version="true"></script>
+
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html> 

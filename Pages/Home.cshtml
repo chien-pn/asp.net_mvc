@@ -1,0 +1,207 @@
+﻿@page
+@using Humanizer
+@model net_chat.Pages.HomeModel
+@{
+	ViewData["Title"] = "Home page";
+	Layout = "_MainLayout";
+}
+<div class="status-box">
+	<div class="input-container">
+		<img src="@(Model.UserProfile.AvatarUrl ?? "image/user.png")" class="avatar-img" alt="Avatar">
+		<input type="text" placeholder="Chiến ơi, bạn đang nghĩ gì thế?">
+	</div>
+	<div class="status-actions">
+		<button>📹 Video trực tiếp</button>
+		<button>🖼️ Ảnh/video</button>
+		<button>😊 Cảm xúc/hoạt động</button>
+	</div>
+</div>
+
+@foreach (var post in Model.NewFeedList)
+{
+	var postJson = System.Text.Json.JsonSerializer.Serialize(post);
+	<div class="status-box post-container" data-post='@Html.Raw(postJson)' data-author="@post.Account?.UserProfile?.UserName" data-content="@post.Content"
+		data-image-url="@post.ImageUrl" data-author-avatar="@(post.Account?.UserProfile?.AvatarUrl ?? "image/user.png")">
+		<div class="input-container">
+			<img src="image/user.png" class="avatar-img" alt="Avatar">
+			<div class="comment-box user-info-box" style="background-color: white">
+				<div class="author">@post.Account?.UserProfile?.UserName</div>
+				<div class="actions" data-created-at="@post.CreatedAt.ToString("o")">
+					<label class="time-text"></label> 
+					<span> </span>·<span> </span>
+					<img src="image/globe_gray.png" width="15px" height="15px" alt="image globe" />
+				</div>
+			</div>
+		</div>
+		<div>
+			<label class="form-label">@post.Content</label>
+		</div>
+		<br />
+		@if (!string.IsNullOrEmpty(post.ImageUrl))
+		{
+			<img src="@post.ImageUrl" alt="Post image" class="post-image" />
+		}
+		<div class="post-actions">
+			<button class="action-btn">
+				<svg class="icon" width="20px" height="20px" viewBox="0 0 24 24" fill="currentColor"
+					xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd"
+						d="M12.444 1.35396C11.6474 0.955692 10.6814 1.33507 10.3687 2.16892L7.807 9.00001L4 9.00001C2.34315 9.00001 1 10.3432 1 12V20C1 21.6569 2.34315 23 4 23H18.3737C19.7948 23 21.0208 22.003 21.3107 20.6119L22.9773 12.6119C23.3654 10.7489 21.9433 9.00001 20.0404 9.00001H14.8874L15.6259 6.7846C16.2554 4.89615 15.4005 2.8322 13.62 1.94198L12.444 1.35396ZM9.67966 9.70225L12.0463 3.39119L12.7256 3.73083C13.6158 4.17595 14.0433 5.20792 13.7285 6.15215L12.9901 8.36755C12.5584 9.66261 13.5223 11 14.8874 11H20.0404C20.6747 11 21.1487 11.583 21.0194 12.204L20.8535 13H17C16.4477 13 16 13.4477 16 14C16 14.5523 16.4477 15 17 15H20.4369L20.0202 17H17C16.4477 17 16 17.4477 16 18C16 18.5523 16.4477 19 17 19H19.6035L19.3527 20.204C19.2561 20.6677 18.8474 21 18.3737 21H8V10.9907C8.75416 10.9179 9.40973 10.4221 9.67966 9.70225ZM6 11H4C3.44772 11 3 11.4477 3 12V20C3 20.5523 3.44772 21 4 21H6V11Z"
+						fill="currentColor" />
+				</svg>
+				<span class="action-text">Like</span>
+			</button>
+			<button class="action-btn comment-btn">
+				<svg width="20px" height="20px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"
+					xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+					<title>comment-3</title>
+					<desc>Created with Sketch Beta.</desc>
+					<defs>
+					</defs>
+					<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="currentColor" sketch:type="MSPage">
+						<g id="Icon-Set" sketch:type="MSLayerGroup" transform="translate(-204.000000, -255.000000)"
+							fill="currentColor">
+							<path
+								d="M228,267 C226.896,267 226,267.896 226,269 C226,270.104 226.896,271 228,271 C229.104,271 230,270.104 230,269 C230,267.896 229.104,267 228,267 L228,267 Z M220,281 C218.832,281 217.704,280.864 216.62,280.633 L211.912,283.463 L211.975,278.824 C208.366,276.654 206,273.066 206,269 C206,262.373 212.268,257 220,257 C227.732,257 234,262.373 234,269 C234,275.628 227.732,281 220,281 L220,281 Z M220,255 C211.164,255 204,261.269 204,269 C204,273.419 206.345,277.354 210,279.919 L210,287 L217.009,282.747 C217.979,282.907 218.977,283 220,283 C228.836,283 236,276.732 236,269 C236,261.269 228.836,255 220,255 L220,255 Z M212,267 C210.896,267 210,267.896 210,269 C210,270.104 210.896,271 212,271 C213.104,271 214,270.104 214,269 C214,267.896 213.104,267 212,267 L212,267 Z M220,267 C218.896,267 218,267.896 218,269 C218,270.104 218.896,271 220,271 C221.104,271 222,270.104 222,269 C222,267.896 221.104,267 220,267 L220,267 Z"
+								id="comment-3" sketch:type="MSShapeGroup">
+							</path>
+						</g>
+					</g>
+				</svg>
+				<span class="action-text">Bình luận</span>
+			</button>
+			<button class="action-btn">
+				<svg width="20px" height="20px" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd"
+						d="M23 5.5C23 7.98528 20.9853 10 18.5 10C17.0993 10 15.8481 9.36007 15.0228 8.35663L9.87308 10.9315C9.95603 11.2731 10 11.63 10 11.9971C10 12.3661 9.9556 12.7247 9.87184 13.0678L15.0228 15.6433C15.8482 14.6399 17.0993 14 18.5 14C20.9853 14 23 16.0147 23 18.5C23 20.9853 20.9853 23 18.5 23C16.0147 23 14 20.9853 14 18.5C14 18.1319 14.0442 17.7742 14.1276 17.4318L8.97554 14.8558C8.1502 15.8581 6.89973 16.4971 5.5 16.4971C3.01472 16.4971 1 14.4824 1 11.9971C1 9.51185 3.01472 7.49713 5.5 7.49713C6.90161 7.49713 8.15356 8.13793 8.97886 9.14254L14.1275 6.5682C14.0442 6.2258 14 5.86806 14 5.5C14 3.01472 16.0147 1 18.5 1C20.9853 1 23 3.01472 23 5.5ZM16.0029 5.5C16.0029 6.87913 17.1209 7.99713 18.5 7.99713C19.8791 7.99713 20.9971 6.87913 20.9971 5.5C20.9971 4.12087 19.8791 3.00287 18.5 3.00287C17.1209 3.00287 16.0029 4.12087 16.0029 5.5ZM16.0029 18.5C16.0029 19.8791 17.1209 20.9971 18.5 20.9971C19.8791 20.9971 20.9971 19.8791 20.9971 18.5C20.9971 17.1209 19.8791 16.0029 18.5 16.0029C17.1209 16.0029 16.0029 17.1209 16.0029 18.5ZM5.5 14.4943C4.12087 14.4943 3.00287 13.3763 3.00287 11.9971C3.00287 10.618 4.12087 9.5 5.5 9.5C6.87913 9.5 7.99713 10.618 7.99713 11.9971C7.99713 13.3763 6.87913 14.4943 5.5 14.4943Z"
+						fill="currentColor" />
+				</svg>
+				<span class="action-text">Chia sẻ</span>
+			</button>
+		</div>
+	</div>
+}
+
+<!-- Post Popup -->
+<div id="post-popup" class="popup-overlay" style="display: none;">
+	<div class="popup-content">
+		<div class="popup-header" style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+			<h3 class="popup-author">Bài viết của ...</h3>
+			<button id="close-popup" class="close-button">&times;</button>
+		</div>
+		<div class="popup-body">
+			<div class="input-container">
+				<img src="image/user.png" class="avatar-img" alt="Avatar">
+				<div class="comment-box" style="background-color: #242526">
+					<div class="author">Ân Ân</div>
+					<div class="actions">8 phút ·
+						<img src="image/globe_white.png" width="17px" height="17px" alt="image globe" />
+					</div>
+				</div>
+			</div>
+			<p class="popup-post-content"></p>
+			<img src="" alt="Post image" class="popup-post-image" style="display: none;" />
+			
+		</div>
+
+		<div class="popup-footer">
+			<div class="post-actions" style="background-color: #242526">
+				<button class="action-btn">
+					<svg class="icon" width="20px" height="20px" viewBox="0 0 24 24" fill="currentColor"
+						xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M12.444 1.35396C11.6474 0.955692 10.6814 1.33507 10.3687 2.16892L7.807 9.00001L4 9.00001C2.34315 9.00001 1 10.3432 1 12V20C1 21.6569 2.34315 23 4 23H18.3737C19.7948 23 21.0208 22.003 21.3107 20.6119L22.9773 12.6119C23.3654 10.7489 21.9433 9.00001 20.0404 9.00001H14.8874L15.6259 6.7846C16.2554 4.89615 15.4005 2.8322 13.62 1.94198L12.444 1.35396ZM9.67966 9.70225L12.0463 3.39119L12.7256 3.73083C13.6158 4.17595 14.0433 5.20792 13.7285 6.15215L12.9901 8.36755C12.5584 9.66261 13.5223 11 14.8874 11H20.0404C20.6747 11 21.1487 11.583 21.0194 12.204L20.8535 13H17C16.4477 13 16 13.4477 16 14C16 14.5523 16.4477 15 17 15H20.4369L20.0202 17H17C16.4477 17 16 17.4477 16 18C16 18.5523 16.4477 19 17 19H19.6035L19.3527 20.204C19.2561 20.6677 18.8474 21 18.3737 21H8V10.9907C8.75416 10.9179 9.40973 10.4221 9.67966 9.70225ZM6 11H4C3.44772 11 3 11.4477 3 12V20C3 20.5523 3.44772 21 4 21H6V11Z"
+							fill="currentColor" />
+					</svg>
+					<span class="action-text">Like</span>
+				</button>
+				<button class="action-btn">
+					<svg width="20px" height="20px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink"
+						xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+						<title>comment-3</title>
+						<desc>Created with Sketch Beta.</desc>
+						<defs>
+						</defs>
+						<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="currentColor"
+							sketch:type="MSPage">
+							<g id="Icon-Set" sketch:type="MSLayerGroup" transform="translate(-204.000000, -255.000000)"
+								fill="currentColor">
+								<path
+									d="M228,267 C226.896,267 226,267.896 226,269 C226,270.104 226.896,271 228,271 C229.104,271 230,270.104 230,269 C230,267.896 229.104,267 228,267 L228,267 Z M220,281 C218.832,281 217.704,280.864 216.62,280.633 L211.912,283.463 L211.975,278.824 C208.366,276.654 206,273.066 206,269 C206,262.373 212.268,257 220,257 C227.732,257 234,262.373 234,269 C234,275.628 227.732,281 220,281 L220,281 Z M220,255 C211.164,255 204,261.269 204,269 C204,273.419 206.345,277.354 210,279.919 L210,287 L217.009,282.747 C217.979,282.907 218.977,283 220,283 C228.836,283 236,276.732 236,269 C236,261.269 228.836,255 220,255 L220,255 Z M212,267 C210.896,267 210,267.896 210,269 C210,270.104 210.896,271 212,271 C213.104,271 214,270.104 214,269 C214,267.896 213.104,267 212,267 L212,267 Z M220,267 C218.896,267 218,267.896 218,269 C218,270.104 218.896,271 220,271 C221.104,271 222,270.104 222,269 C222,267.896 221.104,267 220,267 L220,267 Z"
+									id="comment-3" sketch:type="MSShapeGroup">
+								</path>
+							</g>
+						</g>
+					</svg>
+					<span class="action-text">Bình luận</span>
+				</button>
+				<button class="action-btn">
+					<svg width="20px" height="20px" viewBox="0 0 24 24" fill="currentColor"
+						xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M23 5.5C23 7.98528 20.9853 10 18.5 10C17.0993 10 15.8481 9.36007 15.0228 8.35663L9.87308 10.9315C9.95603 11.2731 10 11.63 10 11.9971C10 12.3661 9.9556 12.7247 9.87184 13.0678L15.0228 15.6433C15.8482 14.6399 17.0993 14 18.5 14C20.9853 14 23 16.0147 23 18.5C23 20.9853 20.9853 23 18.5 23C16.0147 23 14 20.9853 14 18.5C14 18.1319 14.0442 17.7742 14.1276 17.4318L8.97554 14.8558C8.1502 15.8581 6.89973 16.4971 5.5 16.4971C3.01472 16.4971 1 14.4824 1 11.9971C1 9.51185 3.01472 7.49713 5.5 7.49713C6.90161 7.49713 8.15356 8.13793 8.97886 9.14254L14.1275 6.5682C14.0442 6.2258 14 5.86806 14 5.5C14 3.01472 16.0147 1 18.5 1C20.9853 1 23 3.01472 23 5.5ZM16.0029 5.5C16.0029 6.87913 17.1209 7.99713 18.5 7.99713C19.8791 7.99713 20.9971 6.87913 20.9971 5.5C20.9971 4.12087 19.8791 3.00287 18.5 3.00287C17.1209 3.00287 16.0029 4.12087 16.0029 5.5ZM16.0029 18.5C16.0029 19.8791 17.1209 20.9971 18.5 20.9971C19.8791 20.9971 20.9971 19.8791 20.9971 18.5C20.9971 17.1209 19.8791 16.0029 18.5 16.0029C17.1209 16.0029 16.0029 17.1209 16.0029 18.5ZM5.5 14.4943C4.12087 14.4943 3.00287 13.3763 3.00287 11.9971C3.00287 10.618 4.12087 9.5 5.5 9.5C6.87913 9.5 7.99713 10.618 7.99713 11.9971C7.99713 13.3763 6.87913 14.4943 5.5 14.4943Z"
+							fill="currentColor" />
+					</svg>
+					<span class="action-text">Chia sẻ</span>
+				</button>
+			</div>
+			<div class="popup-comments"></div>
+			@* Comment
+			<div class="comment">
+				<div class="avatar"></div>
+				<div class="comment-content">
+					<div class="comment-box">
+						<div class="author">Ân Ân</div>
+						<div class="text">bao nhiêu sd v bác</div>
+					</div>
+					<div class="actions">
+						12 phút · <span onclick="toggleLike(1)">Thích</span> · <span class="reply-btn"
+							onclick="showReplyInput(2)">Trả
+							lời</span>
+					</div>
+					<button class="action-btn comment-btn comment-btn-white" onclick="toggleReplies(this)">
+						Xem tất cả 6 phản hồi
+					</button>
+					@* <div class="replies-toggle" onclick="toggleReplies(this)">Xem tất cả 6 phản hồi</div> *@
+					@* <div class="replies" style="display: none;">
+						<div class="reply">
+							<div class="avatar reply-avatar"></div>
+							<div class="comment-reply">
+								<div class="comment-box">
+									<div class="author">
+										Tâm Zăn <span class="badge">Tác giả</span>
+									</div>
+									<div class="text">Ân Ân 2 hit 1 con</div>
+								</div>
+								<div class="actions">8 phút · <span onclick="toggleLike(4)">Thích</span> · <span
+										onclick="showReplyInput(5)">Trả lời</span></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="reply-input" style="display: none;">
+						<input type="text" placeholder="Viết phản hồi...">
+						<button onclick="sendReply(this)">Gửi</button>
+					</div>
+				</div> *@
+			@* </div> *@
+
+			<div class="comment-input-container">
+				<img src="@(Model.UserProfile.AvatarUrl ?? "image/user.png")" class="avatar-img" alt="Avatar">
+				<input type="text" placeholder="Viết bình luận...">
+				<button class="action-btn" onclick="sendComment(this)">
+					<svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+						<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+						<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+						<g id="SVGRepo_iconCarrier">
+							<path
+								d="M9.11933 4.38421C6.32524 2.98547 3.22434 5.63695 4.17515 8.61184L5.26247 12.0138L4.18106 15.3845C3.22719 18.3576 6.32366 21.0124 9.11924 19.6182L18.0461 15.1663C20.6491 13.8682 20.6519 10.1575 18.0509 8.85543L9.11933 4.38421Z"
+								fill="currentColor"></path>
+						</g>
+					</svg>
+				</button>
+			</div>
+		</div>
+	</div>
+</div>

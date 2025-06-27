@@ -1,0 +1,498 @@
+﻿/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+.topbar {
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1001;
+}
+
+#menu-toggle {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 260px;
+    height: 100%;
+    background-color: #2a3f54;
+    color: white;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    z-index: 1002;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    color: white;
+}
+
+.close-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+}
+
+/* Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    z-index: 1000;
+}
+
+/* Nội dung */
+.content {
+    margin-left: 260px;
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+    position: relative;
+}
+
+/* Mobile view */
+@media (max-width: 767px) {
+    .sidebar {
+        transform: translateX(-100%);
+    }
+
+    .sidebar.active {
+        transform: translateX(0);
+    }
+
+    #menu-toggle {
+        display: inline;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+
+    .overlay.active {
+        display: block;
+    }
+
+    .close-btn {
+        display: inline;
+    }
+
+    .popup-overlay {
+        left: 0;
+        width: 100vw;
+    }
+}
+
+.avatar-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Status box styling */
+.status-box {
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.input-container input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+}
+
+.input-container input:focus {
+    border-color: #007bff;
+}
+
+.status-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.status-actions button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #f8f9fa;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.status-actions button:hover {
+    background-color: #e9ecef;
+}
+
+.profile-pic {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* Content sections */
+.content-section {
+    display: none;
+}
+
+.content-section.active {
+    display: block;
+}
+
+/* Active menu link */
+.menu-link.active {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Menu link hover effect */
+.menu-link:hover {
+    background-color: #f8f9fa;
+    color: #007bff;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: space-around;
+    /* Canh đều 3 nút */
+    background-color: white;
+    border-top: 1px solid #ccc;
+    padding: 8px 0;
+}
+
+.action-btn {
+    display: flex;
+    align-items: center;
+    /* Căn giữa dọc giữa ảnh và text */
+    justify-content: center;
+    /* Căn giữa ngang */
+    gap: 6px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    font-size: 14px;
+}
+
+.action-btn i {
+    font-size: 18px;
+}
+
+.action-btn img {
+    width: 20px;
+    height: 20px;
+    display: block;
+    object-fit: contain;
+}
+
+.action-btn:hover {
+    color: #0866FF;
+}
+
+.action-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    fill: currentColor; /* quan trọng: nhận màu từ CSS color */
+}
+/*.icon-red {
+    width: 20px;
+    height: 20px;
+    filter: invert(26%) sepia(93%) saturate(7471%) hue-rotate(0deg) brightness(101%) contrast(105%);
+}
+
+.icon-blue {
+    width: 20px;
+    height: 20px;
+    filter: invert(26%) sepia(96%) saturate(2298%) hue-rotate(188deg) brightness(93%) contrast(92%);
+}
+
+.icon-green {
+    width: 20px;
+    height: 20px;
+    filter: invert(47%) sepia(98%) saturate(680%) hue-rotate(83deg) brightness(90%) contrast(90%);
+}*/
+
+.icon-gray {
+    color: gray
+}
+/*.icon-fb-blue {
+    width: 20px;
+    height: 20px;
+    filter: invert(38%) sepia(80%) saturate(2247%) hue-rotate(203deg) brightness(100%) contrast(102%);
+}*/
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 260px;
+    width: calc(100vw - 260px);
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.popup-content {
+    background-color: #242526;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 750px;
+    max-height: 90vh;
+    position: relative;
+    color: #E4E6EB;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #3A3B3C;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    flex-shrink: 0;
+}
+
+.popup-header h3 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.close-button {
+    background: #3A3B3C;
+    border: none;
+    color: #E4E6EB;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-body .popup-post-image {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.popup-body {
+    flex: 1;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+.popup-body::-webkit-scrollbar {
+    width: 6px;
+}
+
+.popup-body::-webkit-scrollbar-track {
+    background: #3A3B3C;
+    border-radius: 3px;
+}
+
+.popup-body::-webkit-scrollbar-thumb {
+    background: #65676B;
+    border-radius: 3px;
+}
+
+.popup-body::-webkit-scrollbar-thumb:hover {
+    background: #8E8F91;
+}
+
+.popup-footer {
+    margin-top: 15px;
+    border-top: 1px solid #3A3B3C;
+    background: #242526;
+    padding-top: 10px;
+    flex-shrink: 0;
+}
+
+.popup-footer .post-actions {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5px;
+}
+.popup-footer .action-btn {
+    background: none;
+    border: none;
+    color: #B0B3B8;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 6px;
+    flex-grow: 1;
+    justify-content: center;
+}
+.popup-footer .action-btn:hover {
+    background-color: #242526;
+}
+.popup-footer .action-text {
+    margin-left: 8px;
+}
+
+.popup-comment {
+    margin-top: 15px;
+    border-top: 1px solid #3A3B3C;
+    background: #242526;
+    padding-top: 10px;
+}
+
+.comment-input-container {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+.comment-input-container .avatar-img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.comment-input-container input {
+    width: 100%;
+    flex-grow: 1;
+    background-color: #3A3B3C;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 12px;
+    color: #E4E6EB;
+}
+
+/* Responsive design for popup */
+@media (max-width: 768px) {
+    .popup-overlay {
+        padding: 10px;
+    }
+    
+    .popup-content {
+        max-width: 100%;
+        max-height: 95vh;
+        padding: 15px;
+    }
+    
+    .popup-header h3 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .popup-overlay {
+        padding: 5px;
+    }
+    
+    .popup-content {
+        padding: 10px;
+        max-height: 98vh;
+    }
+    
+    .popup-header h3 {
+        font-size: 1rem;
+    }
+    
+    .close-button {
+        width: 32px;
+        height: 32px;
+        font-size: 20px;
+    }
+}
+
+.user-info-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0; /* hoặc 2-4px nếu muốn cách nhẹ */
+}
+
+.user-info-box .author {
+    font-weight: bold;
+    /* các style khác nếu muốn */
+}
+
+.user-info-box .actions {
+    color: gray;
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.user-info-box .time-text {
+    display: inline;
+    text-align: left;
+}

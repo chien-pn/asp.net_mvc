@@ -1,0 +1,216 @@
+﻿body {
+  padding: 20px;
+}
+
+.comment {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.avatar, .reply-avatar {
+  width: 32px;
+  height: 32px;
+  background-color: #ccc;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.comment-content {
+  flex: 1;
+}
+
+.comment-box {
+  background-color: #3e3e3e;
+  padding: 8px 12px;
+  border-radius: 18px;
+  max-width: 500px;
+  word-wrap: break-word;
+  margin: inherit
+}
+
+.author {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.text {
+  white-space: pre-wrap;
+}
+
+.actions {
+  font-size: 12px;
+  color: #b0b3b8;
+  margin-top: 4px;
+}
+
+.actions span {
+  margin-left: 8px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.actions span:hover {
+  color: #1877f2;
+}
+
+.actions span.liked {
+  color: #1877f2;
+}
+
+.reply-btn {
+  cursor: pointer;
+}
+
+.reply-btn:hover {
+  color: #1877f2;
+}
+
+.replies-toggle {
+  font-size: 12px;
+  color: #b0b3b8;
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+.replies-toggle:hover {
+  color: #1877f2;
+}
+
+/* Style cho button replies-toggle */
+.action-btn.comment-btn {
+  background: none;
+  border: none;
+  color: #000000;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 4px 8px;
+  margin-top: 4px;
+  transition: color 0.2s ease;
+}
+
+.action-btn.comment-btn:hover {
+  color: #1877f2;
+}
+
+/* Màu trắng cho nút có class comment-btn-white */
+.action-btn.comment-btn.comment-btn-white {
+  color: #fff;
+}
+
+.action-btn.comment-btn.comment-btn-white:hover {
+  color: #1877f2;
+}
+
+.replies {
+  margin-top: 8px;
+  padding-left: 20px;
+}
+
+.reply {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.comment-reply {
+  flex: 1;
+}
+
+.badge {
+  background-color: #3a75f4;
+  color: white;
+  font-size: 10px;
+  padding: 2px 4px;
+  border-radius: 4px;
+  margin-left: 4px;
+}
+
+.reply-input {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  padding: 8px 12px;
+  background-color: #3e3e3e;
+  border-radius: 18px;
+}
+
+.reply-input input {
+  flex: 1;
+  background: none;
+  border: none;
+  color: white;
+  outline: none;
+  font-size: 14px;
+}
+
+.reply-input input::placeholder {
+  color: #b0b3b8;
+}
+
+.reply-input button {
+  background: none;
+  border: none;
+  color: #1877f2;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.reply-input button:hover {
+  background-color: rgba(24, 119, 242, 0.1);
+}
+
+.comment-input-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  padding: 8px 12px;
+  background-color: #3e3e3e;
+  border-radius: 18px;
+}
+
+.comment-input-container input {
+  flex: 1;
+  background: none;
+  border: none;
+  color: white;
+  outline: none;
+  font-size: 14px;
+}
+
+.comment-input-container input::placeholder {
+  color: #b0b3b8;
+}
+
+.comment-input-container button {
+  background: none;
+  border: none;
+  color: #1877f2;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.comment-input-container button:hover {
+  background-color: rgba(24, 119, 242, 0.1);
+}
+
+.comment-input-container svg {
+  width: 20px;
+  height: 20px;
+}
+
+.comment-btn-white {
+  color: white;
+}
+.comment-btn-blue {
+  color: #1877f2;
+}
+/* ... các màu khác nếu cần */

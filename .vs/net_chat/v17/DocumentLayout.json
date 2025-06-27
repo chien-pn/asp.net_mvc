@@ -1,0 +1,420 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\MVC\\net_chat\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|e:\\mvc\\net_chat\\wwwroot\\js\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|solutionrelative:wwwroot\\js\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|e:\\mvc\\net_chat\\pages\\shared\\_mainlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|solutionrelative:pages\\shared\\_mainlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|e:\\mvc\\net_chat\\wwwroot\\css\\comment_style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|solutionrelative:wwwroot\\css\\comment_style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|e:\\mvc\\net_chat\\pages\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|solutionrelative:pages\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|e:\\mvc\\net_chat\\pages\\home.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|solutionrelative:pages\\home.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|e:\\mvc\\net_chat\\model\\groupmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|solutionrelative:model\\groupmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|e:\\mvc\\net_chat\\controllers\\postscontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|solutionrelative:controllers\\postscontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|e:\\mvc\\net_chat\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|solutionrelative:wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|e:\\mvc\\net_chat\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|e:\\mvc\\net_chat\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|solutionrelative:pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|e:\\mvc\\net_chat\\pages\\post.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|solutionrelative:pages\\post.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|e:\\mvc\\net_chat\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|solutionrelative:pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|e:\\mvc\\net_chat\\model\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|solutionrelative:model\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|e:\\mvc\\net_chat\\model\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|solutionrelative:model\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|e:\\mvc\\net_chat\\model\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|solutionrelative:model\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|e:\\mvc\\net_chat\\model\\request\\post\\createpostrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|solutionrelative:model\\request\\post\\createpostrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|e:\\mvc\\net_chat\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|solutionrelative:wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|e:\\mvc\\net_chat\\pages\\shared\\_post.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|solutionrelative:pages\\shared\\_post.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|e:\\mvc\\net_chat\\model\\request\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|solutionrelative:model\\request\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|e:\\mvc\\net_chat\\model\\request\\post\\createcommentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|solutionrelative:model\\request\\post\\createcommentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|e:\\mvc\\net_chat\\model\\request\\post\\reactionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|solutionrelative:model\\request\\post\\reactionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|e:\\mvc\\net_chat\\services\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|solutionrelative:services\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|e:\\mvc\\net_chat\\model\\request\\createcommentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|solutionrelative:model\\request\\createcommentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|e:\\mvc\\net_chat\\model\\response\\loginresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA6E8F8-BB0A-452B-A01C-256D973ED47A}|net_chat.csproj|solutionrelative:model\\response\\loginresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "script.js",
+              "DocumentMoniker": "E:\\MVC\\net_chat\\wwwroot\\js\\script.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\script.js",
+              "ToolTip": "E:\\MVC\\net_chat\\wwwroot\\js\\script.js",
+              "RelativeToolTip": "wwwroot\\js\\script.js",
+              "ViewState": "AgIAAOcAAAAAAAAAAAAnwP0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-27T04:18:58.79Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Post.cshtml.cs",
+              "DocumentMoniker": "E:\\MVC\\net_chat\\Pages\\Post.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Post.cshtml.cs",
+              "ToolTip": "E:\\MVC\\net_chat\\Pages\\Post.cshtml.cs",
+              "RelativeToolTip": "Pages\\Post.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T09:38:44.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\MVC\\net_chat\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\MVC\\net_chat\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-27T08:48:45.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\MVC\\net_chat\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Index.cshtml",
+              "ToolTip": "E:\\MVC\\net_chat\\Pages\\Index.cshtml",
+              "RelativeToolTip": "Pages\\Index.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwCAAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-27T08:46:32.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "E:\\MVC\\net_chat\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Index.cshtml.cs",
+              "ToolTip": "E:\\MVC\\net_chat\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "Pages\\Index.cshtml.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAwwBEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T08:46:28.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "comment_style.css",
+              "DocumentMoniker": "E:\\MVC\\net_chat\\wwwroot\\css\\comment_style.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\comment_style.css",
+              "ToolTip": "E:\\MVC\\net_chat\\wwwroot\\css\\comment_style.css",
+              "RelativeToolTip": "wwwroot\\css\\comment_style.css",
+              "ViewState": "AgIAALEAAAAAAAAAAAAAANEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-27T07:15:06.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "site.js",
+              "DocumentMoniker": "E:\\MVC\\net_chat\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\site.js",
+              "ToolTip": "E:\\MVC\\net_chat\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-27T03:50:29.269Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "_Post.cshtml",
+              "DocumentMoniker": "E:\\MVC\\net_chat\\Pages\\Shared\\_Post.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Shared\\_Post.cshtml",
+              "ToolTip": "E:\\MVC\\net_chat\\Pages\\Shared\\_Post.cshtml",
+              "RelativeToolTip": "Pages\\Shared\\_Post.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-27T04:35:39.313Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CreateCommentRequest.cs",
+              "DocumentMoniker": "E:\\MVC\\net_chat\\Model\\Request\\CreateCommentRequest.cs",
+              "RelativeDocumentMoniker": "Model\\Request\\CreateCommentRequest.cs",
+              "ToolTip": "E:\\MVC\\net_chat\\Model\\Request\\CreateCommentRequest.cs",
+              "RelativeToolTip": "Model\\Request\\CreateCommentRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T11:28:44.5Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CreateCommentRequest.cs",
+              "DocumentMoniker": "E:\\MVC\\net_chat\\Model\\Request\\Post\\CreateCommentRequest.cs",
+              "RelativeDocumentMoniker": "Model\\Request\\Post\\CreateCommentRequest.cs",
+              "ToolTip": "E:\\MVC\\net_chat\\Model\\Request\\Post\\CreateCommentRequest.cs",
+              "RelativeToolTip": "Model\\Request\\Post\\CreateCommentRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T11:28:39.148Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserProfile.cs",
+              "DocumentMoniker": "E:\\MVC\\net_chat\\Model\\UserProfile.cs",
+              "RelativeDocumentMoniker": "Model\\UserProfile.cs",
+              "ToolTip": "E:\\MVC\\net_chat\\Model\\UserProfile.cs",
+              "RelativeToolTip": "Model\\UserProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T10:57:21.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GroupMember.cs",
+              "DocumentMoniker": "E:\\MVC\\net_chat\\Model\\GroupMember.cs",
+              "RelativeDocumentMoniker": "Model\\GroupMember.cs",
+              "ToolTip": "E:\\MVC\\net_chat\\Model\\GroupMember.cs",
+              "RelativeToolTip": "Model\\GroupMember.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T11:01:56.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Post.cs",
+              "DocumentMoniker": "E:\\MVC\\net_chat\\Model\\Post.cs",
+              "RelativeDocumentMoniker": "Model\\Post.cs",
+              "ToolTip": "E:\\MVC\\net_chat\\Model\\Post.cs",
+              "RelativeToolTip": "Model\\Post.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA3wB0AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T11:01:55.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "RegisterRequest.cs",
+              "DocumentMoniker": "E:\\MVC\\net_chat\\Model\\Request\\RegisterRequest.cs",
+              "RelativeDocumentMoniker": "Model\\Request\\RegisterRequest.cs",
+              "ToolTip": "E:\\MVC\\net_chat\\Model\\Request\\RegisterRequest.cs",
+              "RelativeToolTip": "Model\\Request\\RegisterRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T10:52:16.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "LoginResult.cs",
+              "DocumentMoniker": "E:\\MVC\\net_chat\\Model\\Response\\LoginResult.cs",
+              "RelativeDocumentMoniker": "Model\\Response\\LoginResult.cs",
+              "ToolTip": "E:\\MVC\\net_chat\\Model\\Response\\LoginResult.cs",
+              "RelativeToolTip": "Model\\Response\\LoginResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T10:44:12.374Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "E:\\MVC\\net_chat\\Services\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Services\\AppDbContext.cs",
+              "ToolTip": "E:\\MVC\\net_chat\\Services\\AppDbContext.cs",
+              "RelativeToolTip": "Services\\AppDbContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAIwBMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T10:44:01.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ReactionRequest.cs",
+              "DocumentMoniker": "E:\\MVC\\net_chat\\Model\\Request\\Post\\ReactionRequest.cs",
+              "RelativeDocumentMoniker": "Model\\Request\\Post\\ReactionRequest.cs",
+              "ToolTip": "E:\\MVC\\net_chat\\Model\\Request\\Post\\ReactionRequest.cs",
+              "RelativeToolTip": "Model\\Request\\Post\\ReactionRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T10:26:50.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CreatePostRequest.cs",
+              "DocumentMoniker": "E:\\MVC\\net_chat\\Model\\Request\\Post\\CreatePostRequest.cs",
+              "RelativeDocumentMoniker": "Model\\Request\\Post\\CreatePostRequest.cs",
+              "ToolTip": "E:\\MVC\\net_chat\\Model\\Request\\Post\\CreatePostRequest.cs",
+              "RelativeToolTip": "Model\\Request\\Post\\CreatePostRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T10:26:40.449Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Comment.cs",
+              "DocumentMoniker": "E:\\MVC\\net_chat\\Model\\Comment.cs",
+              "RelativeDocumentMoniker": "Model\\Comment.cs",
+              "ToolTip": "E:\\MVC\\net_chat\\Model\\Comment.cs",
+              "RelativeToolTip": "Model\\Comment.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBkAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T10:23:13.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PostsController .cs",
+              "DocumentMoniker": "E:\\MVC\\net_chat\\Controllers\\PostsController .cs",
+              "RelativeDocumentMoniker": "Controllers\\PostsController .cs",
+              "ToolTip": "E:\\MVC\\net_chat\\Controllers\\PostsController .cs",
+              "RelativeToolTip": "Controllers\\PostsController .cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAIAwwK0AAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T10:14:54.57Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_MainLayout.cshtml",
+              "DocumentMoniker": "E:\\MVC\\net_chat\\Pages\\Shared\\_MainLayout.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Shared\\_MainLayout.cshtml",
+              "ToolTip": "E:\\MVC\\net_chat\\Pages\\Shared\\_MainLayout.cshtml",
+              "RelativeToolTip": "Pages\\Shared\\_MainLayout.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-26T09:41:27.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Home.cshtml.cs",
+              "DocumentMoniker": "E:\\MVC\\net_chat\\Pages\\Home.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Home.cshtml.cs",
+              "ToolTip": "E:\\MVC\\net_chat\\Pages\\Home.cshtml.cs",
+              "RelativeToolTip": "Pages\\Home.cshtml.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAwwCoAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T09:40:26.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "style.css",
+              "DocumentMoniker": "E:\\MVC\\net_chat\\wwwroot\\css\\style.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\style.css",
+              "ToolTip": "E:\\MVC\\net_chat\\wwwroot\\css\\style.css",
+              "RelativeToolTip": "wwwroot\\css\\style.css",
+              "ViewState": "AgIAAIkBAAAAAAAAAAAswKoBAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-26T09:01:10.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Home.cshtml",
+              "DocumentMoniker": "E:\\MVC\\net_chat\\Pages\\Home.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Home.cshtml",
+              "ToolTip": "E:\\MVC\\net_chat\\Pages\\Home.cshtml",
+              "RelativeToolTip": "Pages\\Home.cshtml",
+              "ViewState": "AgIAAAgAAAAAAAAAAAApwBsAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-26T08:58:57.117Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
